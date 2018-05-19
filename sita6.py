@@ -5,42 +5,41 @@ import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 from urllib import urlopen
-from Helper.main import qr
 from bs4 import BeautifulSoup
 import time, random, sys, re, os, json, subprocess, threading, string, codecs, requests, tweepy, ctypes, urllib, urllib2, wikipedia,tempfile,glob,shutil,unicodedata,goslate
 from gtts import gTTS
 
 #tinkerbell
 cl = LINETCR.LINE()
-cl.login(token=qr().get())
+cl.login(token="")
 cl.loginResult()
-#vidia
-#kt = LINETCR.LINE()
-#kt.login(token="ErjBTlwaOuJOQpodjNE0.AlWfIlsXTIJM7bmzvSVDia.PuFZfFDhuQTbq1OCxdMTEh9tVZmGfots0ZEnFt/zKn0=")
-#kt.loginResult()
-#rosetta
-#ks = LINETCR.LINE()
-#ks.login(token="Er5Mtt3ILPvAxaVoYE51.ZFEHdQlbfxkm95LFtzYn0q.JMTC4m2z5wfyN8badd0ZuYI5ZsZKhL+Hrl7eSU1rwyU=")
-#ks.loginResult()
-#sirvelmist
-#ki = LINETCR.LINE()
-#ki.login(token="Er3t78dadAoLFGp0Fgfd.gcIZOzJiAxA9OKbQh1po7q.tqBqCKZ5Xhl/hmItiXXUKJwv4Z1Abh4OLIylyDU+FxQ=")
-#ki.loginResult()
-#fawn
-#kk = LINETCR.LINE()
-#kk.login(token="Er2x7myEFiSPMu89iIYa.uMl8kSf8CYhDiUyd1w9SsG.3FHgIHa2xBj9XsByisI1p6NT/PMmRjqxJEe5h6w0tbc=")
-#kk.loginResult()
-#iridessa
-#kc = LINETCR.LINE()
-#kc.login(token="ErJ8rbBrVwdB3LDZj6y0.fiIKg0XRBpH228JY7npzia.yfcr309Y/twqPj2oE0zBlzNvTm+ZXJjKLbGeDogJKyU=")
-#kc.loginResult()
 
-#kicker ghost
-#kl = LINETCR.LINE()
-#kl.login(token="")
-#kl.loginResult()
+kt = LINETCR.LINE()
+kt.login(token="")
+kt.loginResult()
 
-print "sukses Nih ye"
+ks = LINETCR.LINE()
+ks.login(token="")
+ks.loginResult()
+
+ki = LINETCR.LINE()
+ki.login(token="")
+ki.loginResult()
+
+kk = LINETCR.LINE()
+kk.login(token="")
+kk.loginResult()
+
+kc = LINETCR.LINE()
+kc.login(token="")
+kc.loginResult()
+
+kicker ghost
+kl = LINETCR.LINE()
+kl.login(token="")
+kl.loginResult()
+
+print "sukses redbot"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 helpMessage= """\n
@@ -273,20 +272,20 @@ RED SAMURI SELFBOT
 http://line.me/ti/p/~samuri5
 ──────┅═ই۝ई═┅──────
 """
-KAC=[cl]
+KAC=[cl,ki,kk,kc,ks,kt,kl]
 mid = cl.getProfile().mid
 ["u3954153058195643e684ea29ab880f4c"]
-#Amid = ki.getProfile().mid
-#["u1828b3a198c86976bda2406a1f53ceed"]
-#Bmid = kk.getProfile().mid
-#["u5262fc2ac17c7321dd22e603d56f6c4a"]
-#Cmid = kc.getProfile().mid
-#["u1488a41b4c6b6cf876dbc8f2ecd3d920"]
-#Dmid = ks.getProfile().mid
-#["ucdf7a10ea2c115728cf7995f4d9c8dd1"]
-#Emid = kt.getProfile().mid
-#["u68bc0588b4b1b628e6ec131956cbdd20"]
-#Fmid = kl.getProfile().mid
+Amid = ki.getProfile().mid
+["u1828b3a198c86976bda2406a1f53ceed"]
+Bmid = kk.getProfile().mid
+["u5262fc2ac17c7321dd22e603d56f6c4a"]
+Cmid = kc.getProfile().mid
+["u1488a41b4c6b6cf876dbc8f2ecd3d920"]
+Dmid = ks.getProfile().mid
+["ucdf7a10ea2c115728cf7995f4d9c8dd1"]
+Emid = kt.getProfile().mid
+["u68bc0588b4b1b628e6ec131956cbdd20"]
+Fmid = kl.getProfile().mid
 
 protectname = []
 protecturl = []
@@ -305,7 +304,7 @@ wait = {
     "kickMention":False,
     'contact':False,
     'autoJoin':True,
-    'autoCancel':{"on":True, "members":1},
+    'autoCancel':{"on":True, "members":50},
     'leaveRoom':False,
     "Selfbot":True,
     'timeline':True,
@@ -377,35 +376,35 @@ backup.displayName = contact.displayName
 backup.statusMessage = contact.statusMessage
 backup.pictureStatus = contact.pictureStatus
 
-#contact = ki.getProfile()
-#backup = ki.getProfile()
-#backup.displayName = contact.displayName
-#backup.statusMessage = contact.statusMessage
-#backup.pictureStatus = contact.pictureStatus
+contact = ki.getProfile()
+backup = ki.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
 
-#contact = kk.getProfile()
-#backup = kk.getProfile()
-#backup.displayName = contact.displayName
-#backup.statusMessage = contact.statusMessage
-#backup.pictureStatus = contact.pictureStatus
+contact = kk.getProfile()
+backup = kk.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
 
-#contact = kc.getProfile()
-#backup = kc.getProfile()
-#backup.displayName = contact.displayName
-#backup.statusMessage = contact.statusMessage
-#backup.pictureStatus = contact.pictureStatus
+contact = kc.getProfile()
+backup = kc.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
 
-#contact = ks.getProfile()
-#backup = ks.getProfile()
-#backup.displayName = contact.displayName
-#backup.statusMessage = contact.statusMessage
-#backup.pictureStatus = contact.pictureStatus
+contact = ks.getProfile()
+backup = ks.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
 
-#contact = kt.getProfile()
-#backup = kt.getProfile()
-#backup.displayName = contact.displayName
-#backup.statusMessage = contact.statusMessage
-#backup.pictureStatus = contact.pictureStatus
+contact = kt.getProfile()
+backup = kt.getProfile()
+backup.displayName = contact.displayName
+backup.statusMessage = contact.statusMessage
+backup.pictureStatus = contact.pictureStatus
 
 def upload_tempimage(client):
      '''

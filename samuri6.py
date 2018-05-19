@@ -7,7 +7,6 @@ import time, random, sys, ast, re, os, io, json, subprocess, threading, string, 
 import timeit
 from bs4 import BeautifulSoup
 from urllib import urlopen
-from Helper.main import qr
 from io import StringIO
 from threading import Thread
 from gtts import gTTS
@@ -23,7 +22,7 @@ else:
     import urllib.parse
 
 cl = LINETCR.LINE()
-cl.login(token=qr().get())
+cl.login(token="")
 cl.loginResult()
 
     

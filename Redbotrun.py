@@ -5,7 +5,6 @@ from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
 from bs4 import BeautifulSoup
 from urllib import urlopen
-from Helper.main import qr
 import timeit
 import requests
 from io import StringIO
@@ -25,7 +24,7 @@ else:
 
 
 cl = LINETCR.LINE()
-cl.login(token=qr().get())
+cl.login(token="")
 cl.loginResult()
 
 print """
@@ -229,7 +228,8 @@ helpgroup ="""
 █░║✶║〘ดำ〙
 █░║✶║〘แบน @〙
 █░║✶║〘ล้างแบน @〙
-█░║✶║〘บัญชีดำ〙                                                                    █░║✶║〘Contact ban〙
+█░║✶║〘บัญชีดำ〙
+█░║✶║〘Contact ban〙
 █░║✶║〘midban〙
 █░║✶║〘ล้างดำ〙
 █░║✶║〘ดับไฟ〙

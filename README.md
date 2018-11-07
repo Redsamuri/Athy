@@ -1,2 +1,2 @@
-# Sit6
-# Buat Kamu Ya pake dengan bijak
+# SAMURAI PY2
+

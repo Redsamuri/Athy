@@ -18,8 +18,8 @@ class Channel:
     http_query_path = "/S4"
     channel_query_path = "/CH4"
 
-    UA = "Line/2018.07332.2233.Tanduri/760.1.6 Tanysyz/18.0.0"
-    LA = "IOSIPAD\t7.18.0\tiPhone OS\t11.12.1"
+    UA = "Line/8.16.3"
+    LA = "IOSIPAD 8.10.1 iPhone OS 11.2.5"
 
     authToken = None
     mid = None
@@ -141,7 +141,7 @@ class Channel:
 
         return r.json()
 
-    def activity(self, limit=20):
+    def activity(self, limit=200):
 
         header = {
             "Content-Type" : "application/json",

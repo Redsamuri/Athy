@@ -18,8 +18,8 @@ class Poll:
   host = "gd2.line.naver.jp";
   port = 443;
 
-  UA = "Line/2018.07332.2233.Tanduri/760.1.6 Tanysyz/18.0.0"
-  LA = "IOSIPAD\t7.18.0\tiPhone OS\t11.12.1"
+  UA = "Line/8.16.3"
+  LA = "IOSIPAD 8.10.1 iPhone OS 11.2.5"
 
   rev = 0
 
@@ -40,7 +40,7 @@ class Poll:
     #usleep = lambda x: time.sleep(x/1000000.0)
     while True:
       try:
-        Ops = self.client.fetchOps(self.rev, 5)
+        Ops = self.client.fetchOps(self.rev, 50)
       except EOFError:
         raise Exception("It might be wrong revision\n" + str(self.rev))
 

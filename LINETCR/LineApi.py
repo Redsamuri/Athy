@@ -41,12 +41,12 @@ class LINE:
       raise Exception("invalid arguments")
 
     self.authToken = self.Talk.authToken
-    self._headers = {'X-Line-Application':'IOSIPAD\t7.18.0\tiPhone OS\t11.12.1','X-Line-Access': self.authToken, 'User-Agent': 'Line/2018.07332.2233.Tanduri/760.1.6 Tanysyz/18.0.0'}
+    self._headers = {'X-Line-Application':'IOSIPAD 8.10.1 iPhone OS 11.2.5','X-Line-Access': self.authToken, 'User-Agent': 'Line/8.16.3'}
     self.cert = self.Talk.cert
     self._headers = {
-              'X-Line-Application': 'IOSIPAD\t7.18.0\tiPhone OS\t11.12.1',
+              'X-Line-Application': 'IOSIPAD 8.10.1 iPhone OS 11.2.5',
               'X-Line-Access': self.authToken, 
-              'User-Agent': 'Line/2018.07332.2233.Tanduri/760.1.6 Tanysyz/18.0.0',
+              'User-Agent': 'Line/8.16.3',
    }
     self.Poll = Poll(self.authToken)
     self.channel = channel.Channel(self.authToken)
@@ -521,7 +521,8 @@ class LINE:
       prof = self.getProfile()
 
       print("=============[FOR BOT]==============")
-      print("====[ Creator Powered by Babang-Adhi ]====")
+      print("====[ RED SAMURAI SELFBOT ]====")
+      print("====[ กรุณากดลิ้งภายใน2นาที ]====")
       print("==============================================")
       print("MID : " + prof.mid)
       print("NAME : " + prof.displayName)
